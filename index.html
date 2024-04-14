@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorawar's resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        /* Additional styles for flame effect */
+        .flame-h2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .flame-h2 canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none; /* Ensure canvas does not interfere with mouse events */
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <!-- resume header with your name and title -->
+        <h1><strong><em>Zorawar Singh Walia</em></strong></h1>
+        <hr><strong>Full-Stack Developer</strong><hr>
+    </header>
+    <main>
+        <article id="mainLeft">
+            <section>
+                <h2 class="flame-h2">CONTACT</h2>
+                <p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="zaveeraj@gmail.com">zaveeraj@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <a href="https://github.com/ZaviCodes">ZaviCodes</a>
+                </p>
+            </section>
+            <section>
+                <h2 class="flame-h2">SKILLS</h2>
+                <!-- your skills -->
+                <p><li>Javascript <li> HTML/CSS <li> Java</p>
+            </section>
+            <section>
+                <h2 class="flame-h2">EDUCATION</h2>
+                <!-- your education -->
+                <h3>Highschool Student</h3>
+                <p>
+                    Seaquam Secondary
+                </p>
+                <p>
+                    Junior
+                </p>
+            </section>            
+        </article>
+        <article id="mainRight">
+            <section>
+                <h2 class="flame-h2">ABOUT</h2>
+                <!-- about you -->
+                <p>Young Full-Stack Developer with a good set of analytical skills and great team leading strategies. </p>
+            </section>
+            <section>
+                <h2 class="flame-h2">Fill something in here</h2>
+                <!-- your work experience -->
+            </section>
+        </article>
+    </main>
+
+    <!-- External JavaScript file for the flame effect -->
+    <script src="resume.js"></script>
+</body>
+</html>
