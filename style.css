@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    max-width: 960px;
+    margin: auto;
+}
+h1 {
+    font-size: 3em;
+    letter-spacing: .6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+h3 {
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+
+    main { 
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-top: 3em;
+    }
+    
+    header {
+        text-align: center;
+        margin: auto 2em;
+    }
+    
+    section {
+        margin: auto 1em 4em 2em;
+    }
+    
+    i {
+        margin-right: .5em;
+    }
+    
+    p {
+        margin: .2em auto
+    }
+    
+    hr {
+        border: none;
+        background-color: lightgray;
+        height: 1px;
+    }
+    
+    h1, h2, h3 {
+        font-weight: 100;
+        margin-bottom: 0;
+    }
+   
+#mainLeft {
+    border-right: 1px solid lightgray;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: slideIn 1s ease forwards;
+}
+@keyframes impact {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+p {
+    animation: impact 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+/* Set initial background color to black */
+body {
+    background-color: black;
+    animation: tv-on 4s ease-in forwards; /* Apply the animation to the body */
+}
+
+/* Animation for the TV turning on */
+@keyframes tv-on {
+    0% { opacity: 0; background-color: black; } /* Start with opacity 0 and black background */
+    10% { opacity: 1; background-color: #333; } /* Transition to full opacity and slightly lighter background */
+    90% { opacity: 1; background-color: #ccc; } /* Stay fully opaque with a light gray background */
+    100% { opacity: 1; background-color: #ccc; } /* Stay at #ccc until the end of the animation */
+}
